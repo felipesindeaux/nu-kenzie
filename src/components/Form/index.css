@@ -1,0 +1,97 @@
+form{
+    width: 260px;
+    height: 270px;
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+form span{
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Inter';
+    color: #868E96;
+}
+
+form input{
+    padding: 0px 16px;
+    background: #F8F9FA;
+    border: 2px solid #F8F9FA;
+    border-radius: 8px;
+    height: 48px
+}
+
+.flex__inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.flex__inputs input, select{
+    width: 120px;
+    height: 48px;
+    padding: 0 16px;
+    border: 2px solid #F8F9FA;
+    background-color: #F8F9FA;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.flex__inputs input::placeholder, select{
+    color: #868E96;
+}
+
+.div__valor input::placeholder{
+    text-align: end;
+}
+
+.flex__inputs div{
+    display: flex;
+    flex-direction: column;
+}
+
+form button{
+    background-color: #FD377E;
+    color: white;
+    border: 2px solid #FD377E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 13px 20px;
+    height: 48px;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+form button:hover{
+    background-color: #E34981;
+}
+
+.exemplo{
+    display: flex;
+    flex-direction: column;
+}
+
+.exemplo span{
+    margin: 5px 0px 0px 5px;
+}
+
+@media (min-width: 700px) {
+
+    form{
+        width: 363px;
+        height: 351px;
+    }
+
+}
+
+@media (min-width: 1100px) {
+
+    form{
+        margin-right: 60px;
+    }
+
+}

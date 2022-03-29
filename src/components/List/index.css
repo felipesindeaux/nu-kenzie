@@ -1,0 +1,97 @@
+.headerList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.headerList span{
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529;
+}
+
+.headerButtons{
+    display: flex;
+    justify-content: space-around;
+    width: 290px;
+    margin-bottom: 20px;
+}
+
+.cards{
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    background-color: #F8F9FA;
+    width: 290px;
+    margin-top: 32px;
+}
+
+.Entrada{
+    border-left: 4px solid #03B898;
+    /* #E9ECEF */
+}
+
+.Despesa{
+    border-left: 4px solid #E9ECEF;
+}
+
+.flex__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+    height: 87px;
+    width: 50%;
+}
+
+.flex__card span{
+    font-weight: 400;
+    font-size: 12px;
+    color: #868E96;
+}
+
+.preco__card{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-top: 18px;
+}
+
+.preco__card span{
+    font-weight: 400;
+    font-size: 12px;
+    color: #212529;
+}
+
+@media (min-width: 700px) {
+
+    .headerList{
+        flex-direction: row;
+        width: 560px;
+    }
+
+    .headerButtons{
+        justify-content: space-between;
+        margin-bottom: 0px;
+        
+    }
+
+    .card{
+        width: 560px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .cards{
+        max-height: 600px;
+        margin-bottom: 20px;
+    }
+}
